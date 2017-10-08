@@ -1,0 +1,14 @@
+import pandas as pd
+names = pd.Series(['Ann Ray', 'Bob Dylan', 'Cecile Kwaski'])
+def reverse_name():
+    split_name = name.split(" ")
+    first_name = split_name[0]
+    last_name = split_name[1]
+    return last_name + ", " + first_name
+   
+
+def reverse_names(names):
+    return names.apply(reverse_name)
+    
+reverse_names(names)
+    
